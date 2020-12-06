@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: ;
+}
+
+#gridwrapper1{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "he he"
+    "na ma"
+    "fo fo"
+    ;
+}
+
+#header_1{
+    grid-area: he;
+    background: red;
+}
+
+#nav_1{
+    grid-area: na;
+    background: brown;
+}
+
+#main1 {
+    grid-area: ma;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 500px 1fr;
+    grid-template-areas: 
+    "op op"
+    "mt ev"
+    "so so"
+    ;
+}
+
+
+#veckans_maltid{
+    grid-area: mt;
+    background: green;
+    border: solid 20px;
+    margin: 15px;
+    border-radius: 10%;
+}
+
+#event{
+    grid-area: ev;
+    background: hotpink;
+    border: solid 20px;
+    margin: 15px;
+    border-radius: 10%;
+}
+
+#footer_1{
+    grid-area: fo;
+    background: lightgreen;
+}
+
+#flex_container1 {
+    grid-area: op;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#flex_container2 {
+    grid-area: so;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#oppettider{
+    border-style: solid;
+    margin: 10px;
+    background: white;
+}
+
+#instagram{
+    border-radius: 50%;
+}
+
+#facebook{
+    border-radius: 50%;
+    background: white;
+}
+
+#twitter{
+    border-radius: 50%;
+}
+
+img{
+    height: 100px;
+    width: auto;
+}
