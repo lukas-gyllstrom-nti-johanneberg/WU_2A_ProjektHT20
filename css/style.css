@@ -2,37 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: ;
 }
 
-#gridwrapper1{
+.gridwrapper1{
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 150px;
     grid-template-areas: 
-    "he he"
+    "na he"
     "na ma"
-    "fo fo"
+    "na fo"
     ;
 }
 
-#header_1{
+.header{
+    display: flex;
     grid-area: he;
-    background: red;
+    border: solid 20px;
+    margin: 10px;
+    align-items: center;
 }
 
-#nav_1{
+.nav{
     grid-area: na;
     background: brown;
+    position: fixed;
+    height: 1000px;
+    width: 135px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav:hover{
+    width: 200px;
 }
 
 #main1 {
     grid-area: ma;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 500px 1fr;
+    grid-template-rows: 120px 600px 1fr;
     grid-template-areas: 
     "op op"
     "mt ev"
@@ -40,26 +51,41 @@
     ;
 }
 
+#main2{
+    grid-area: ma;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+#main3{
+    grid-area: ma;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    grid-area: fo;
+    background: firebrick;
+}
 
 #veckans_maltid{
     grid-area: mt;
-    background: green;
+    background: peru;
     border: solid 20px;
     margin: 15px;
     border-radius: 10%;
+    padding: 10px;
 }
 
 #event{
     grid-area: ev;
-    background: hotpink;
+    background: peru;
     border: solid 20px;
     margin: 15px;
     border-radius: 10%;
-}
-
-#footer_1{
-    grid-area: fo;
-    background: lightgreen;
+    padding: 10px;
 }
 
 #flex_container1 {
@@ -79,22 +105,164 @@
     border-style: solid;
     margin: 10px;
     background: white;
+    height: 100px;
 }
 
 #instagram{
     border-radius: 50%;
+    
 }
 
 #facebook{
     border-radius: 50%;
-    background: white;
+    margin: 50px; 
 }
 
 #twitter{
     border-radius: 50%;
+    margin: 50px;
 }
 
-img{
-    height: 100px;
+.logga{
+    height: 150px;
     width: auto;
+    margin: 20px;
+}
+
+.huvudrubrik{
+    display: inline-block;
+    font-size: 80px;
+}
+
+.huvudrubrik_pa_andra_sidor:hover{
+    color: black;
+    font-size: 100%;
+}
+
+.meny{
+    height: 60px;
+}
+
+.kontakt{
+    height: 60px;
+}
+
+#facebookbild{
+    height: 200px;
+}
+
+#instabild{
+    height: 280px;
+}
+
+#twitterbild{
+    height: 200px;
+}
+
+#öppettider-lista{
+    list-style-type: none;
+}
+
+.footer-lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-lista li{
+    display: inline-block;
+    margin: 45px;
+}
+
+.footer-lista li:hover{
+    color: peru;
+}
+
+.navigation{
+    margin: 10px;
+    list-style-type: none;
+}
+
+#rubrik_i_main{
+    font-size: 100px;
+}
+
+#rubrik_i_main_flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+#flexcontainer_i_meny{
+    margin: 10px;
+    border: solid 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: peru;
+}
+
+#kostnad{
+    list-style-type: none;
+}
+
+#om_oss{
+    margin: 10px;
+}
+
+#om_oss p{
+    border: solid 5px;
+    padding: 5px;
+    background: peru;
+}
+
+#flex_container_i_om_oss{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#kontakta_oss{
+    margin: 10px;
+}
+
+#kontakta_oss ul{
+    border: solid 5px;
+    padding: 5px;
+    background: peru;
+    list-style-type: none;
+}
+
+#kontakta_oss ul li{
+    font-size: 50px;
+}
+
+#flex_container_i_kontakta_oss{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#karta:hover{
+    font-size: 100%;
+    color: black;
+}
+
+.rubrik_i_sida3{
+    font-size: 45px;
+}
+
+ol li{
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: lightblue;
+    font-size: 110%;
+}
+
+p{
+    font-size: larger;
 }
